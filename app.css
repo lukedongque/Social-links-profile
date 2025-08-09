@@ -1,0 +1,125 @@
+:root {
+    --background: hsl(0, 0%, 8%);
+    --card-background: hsl(0, 0%, 12%);
+    --button-background: hsl(0, 0%, 20%);
+    --font-family: 'Inter';
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --Grey-900: hsl(0, 0%, 8%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --yellow-green: hsl(75, 94%, 57%);
+    --primary-text-color: hsl(0, 0%, 100%);
+
+}
+
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 90%;
+    background-color: var(--Grey-900);
+}
+body {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-normal);
+    color: var(--primary-text-color);
+}
+
+.container {
+    max-width: 1000px;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 2rem);
+    padding: 2rem;
+
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Grey-800);
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin: 0 5rem;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 7rem;
+}
+
+.name{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0.5rem;
+}
+
+.address {
+    font-size: .9rem;
+    margin: 0;
+    font-weight: var(--font-weight-bold);
+    color: var(--yellow-green);
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: var(--primary-text-color);
+    margin-bottom: 2rem;
+}
+.contact-buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.btn {
+    padding: 1rem ;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--Grey-700);
+    font-weight: var(--font-weight-bold);
+    transition: 0.3s;
+}
+
+.btn:hover, .btn:active {
+    box-shadow: 0 0 5px var(--yellow-green); 
+    color: var(--Grey-700);
+    font-weight: var(--font-weight-bold);
+    background-color: var(--yellow-green);
+    
+}
+
+.footer-section{
+    display: block;
+    height: 2rem;
+}
+
